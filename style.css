@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:white;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url("images/top.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+    background-color: rgba(56, 93, 169, 0.5);
+}
+
+.hero p {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(20, 174, 180, 0.5);
+    padding: 10px;
+}
+
+.About h2 {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.About p {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.Profile-title {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: aqua;
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.Profile p {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+     flex: 1;
+}
+
+.Profile img {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+}
+
+.Portfolio {
+    border: 3px solid paleturquoise;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px;
+    background-color: white;
+}
+
+.Portfolio h2 {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.slide {
+    flex: 1;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    opacity: 0;
+    animation: fade 4s infinite;
+}
+
+.slide img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.Skill h2 {
+    margin: 0;
+
+    background: linear-gradient(-45deg,
+            #ff9a9e,
+            #fad0c4,
+            #a18cd1);
+
+    background-size: 400% 400%;
+
+    animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.Skill h2 {
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.Skill p {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(56, 93, 169, 1);
+}
+
+.haikei {
+    background-color: rgb(221, 238, 243);
+}
